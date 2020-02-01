@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>佐藤大輔</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <%= yield :header %>
+    
+</head>
+  <body>
+    <%= yield %>
+
+    <%#フッター%>
+    <div class="uk-section uk-section-secondary uk-margin" >
+        <div class="uk-flex uk-flex-center">
+            本ウェブページのソースコードは以下で参照できます。<br>
+            https://hogehoge
+        </div>
+    </div>
+  </body>
+</html>

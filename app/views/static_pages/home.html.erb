@@ -1,0 +1,215 @@
+<body>
+    
+    <div class="uk-background-base">
+        <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('<%=asset_url('top_image.jpg')%>');">
+            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Daisuke Sato Portfolio</h1>
+                <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">System Engineer・Programmer</p>
+            </div>
+        </div>
+
+        <div class="uk-container uk-container-midium uk-container-platinum uk-margin">
+
+                <%# プロフィール %>
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default uk-card-large uk-card-body ">
+                        <h3 class="uk-card-title uk-flex uk-flex-center">プロフィール</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <%# スキル %>
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default uk-card-large uk-card-body ">
+                        <h3 class="uk-card-title uk-flex uk-flex-center">スキル</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                        <table class="uk-table uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>技術</th>
+                                    <th>経験年数</th>
+                                    <th>スキルレベル</th>
+                                    <th>備考</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>言語</td>
+                                    <td>C</td>
+                                    <td>2年</td>
+                                    <td>★★★</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>C++</td>
+                                    <td>5年</td>
+                                    <td>★★☆</td>
+                                    <td>大学時代から社会人にかけて個人ゲーム開発で使用</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Java</td>
+                                    <td>5年</td>
+                                    <td>★★★</td>
+                                    <td>業務で使用</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Javascript</td>
+                                    <td>1年</td>
+                                    <td>★★☆</td>
+                                    <td>業務および個人のWEBページ開発で使用。jQUery,Vue.js使用経験あり。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <%# 仕事内容 %>
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default uk-card-large uk-card-body ">
+                        <h3 class="uk-card-title uk-flex uk-flex-center">開発経歴（業務）</h3>
+                        <p>株式会社ウェブマネー（2017年4月～現在）</p>
+                        <div class="uk-grid uk-child-width-1-2@m uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    <div class="uk-card-title">
+                                        自社プリペイド式クレジットカードの不正対策プロジェクト
+                                    </div>
+                                    <dl class="uk-description-list">
+                                        <dt>【開発期間・規模】</dt><dd>5ヶ月、PJメンバー4名</dd>
+                                        <dt>【使用技術】</dt><dd>Unix・Apache Tomcat・Java・Javascript・Oracle</dd>
+                                        <dt>【担当】</dt>
+                                        <dd>要求整理・見積・要件定義・システム設計・実装・結合試験・システム試験</dd>
+                                        <dt>【業務内容】</dt>
+                                        <dd>社内企画部との要求事項整理からリリース、スケジュール管理まですべて実施</dd>
+                                        <dt>【取り組み】</dt>
+                                        <dd>前プロジェクトがスケジュール遅延を起こしたため、KPTによる振り返りから、対外部署との連携について改善して期限通りのリリースを行いました。また、システム面においては申込処理を非同期化することで、分散していたフロント処理を集約して保守性を向上させました。</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    <div class="uk-card-title">
+                                        自社プリペイド式クレジットカードの利用促進施策
+                                    </div>
+                                    <dl class="uk-description-list">
+                                        <dt>【開発期間・規模】</dt><dd>8ヶ月、PJメンバー10名</dd>
+                                        <dt>【使用技術】</dt><dd>Unix・Apache Tomcat・Java・Javascript・Oracle</dd>
+                                        <dt>【担当】</dt>
+                                        <dd>要求整理・見積・要件定義・システム設計・実装・結合試験・システム試験</dd>
+                                        <dt>【業務内容】</dt>
+                                        <dd>社内企画部との要求事項整理からリリース、スケジュール管理まですべて実施</dd>
+                                        <dt>【取り組み】</dt>
+                                        <dd>社内企画部と情報システム部が密に連携して行うほぼ初のプロジェクトだったため、進め方の定石がない状態での開発を行いました。スケジュールの遅延や、要件の齟齬は発生しましたが、最終的にリリースでき現在安定稼働しています。</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <p>株式会社アルファシステムズ（2013年4月～2017年3月）</p>
+                        <div class="uk-grid uk-child-width-1-2@m uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body uk-link-toggle">
+                                    <div class="uk-card-title">
+                                        顧客数10万人を超える放送事業者向けの顧客管理システムの開発
+                                    </div>
+                                    <dl class="uk-description-list">
+                                        <dt>【開発期間・規模】</dt><dd>3年3ヶ月、PJメンバー150名</dd>
+                                        <dt>【使用技術】</dt><dd>Unix・Apache Tomcat・Java・Oracle</dd>
+                                        <dt>【担当】</dt><dd>要件定義・システム設計・結合試験・システム試験</dd>
+                                        <dt>【業務内容】</dt>
+                                        <dd>オペレーターが使用する画面・サーバサイド機能を担当。コード実装はオフショアへ委託、SQLの実装/チューニングは自身で実施。</dd>
+                                        <dt>【取り組み】</dt>
+                                        <dd>パートナーの試験担当要員として配属されたプロジェクトですが、次第に設計、要件定義と上流工程を任せてもらえるようになりました。また、こちらからシステムを使う顧客に対して機能提案を行い採用されました。</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                <%# 個人開発 %>
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default uk-card-large uk-card-body ">
+                        <h3 class="uk-card-title uk-flex uk-flex-center">開発経歴（個人）</h3>
+                        <p>個人で開発したウェブサイトおよびゲームを紹介します。</p>
+
+                        <div class="uk-child-width-1-2@m uk-grid-match uk-margin uk-grid" uk-grid>
+
+                            <div class="uk-margin-bottom">
+                                <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                                    カクテルレシピ検索サイト
+                                    <div class="uk-card-title uk-margin-small">
+                                        Cocktail -f liquer
+                                    </div>
+
+                                    <div class="uk-flex uk-flex-center">
+                                        <%= image_tag "cocktail-f_capture.png", :width=>"320" ,:height=>"240", :class=>"uk-img uk-transition-scale-up uk-transition-opaque"%>
+                                    </div>
+
+                                    <dl class="uk-description-list">
+                                        <dt>【サイトURL】</dt>
+                                        <dd><%= link_to "https://cocktail-f.com/", "https://cocktail-f.com/", class: '', target: "_blank"%></dd>
+                                        <dt>【使用技術】</dt><dd>Raspberry pi・Ruby on Rails・Javascript・Vue.js・UIkit・MySQL・Heroku</dd>
+                                        
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-bottom">
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    アリーナ型横スクロールアクション
+                                    <div class="uk-card-title uk-margin-small">
+                                        Gilbert Crisis
+                                    </div>
+                                    <div class="uk-flex uk-flex-center">
+                                        <iframe width="320" height="240" src="https://www.youtube.com/embed/0ApuV7T-JsU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <dl class="uk-description-list">
+                                        <dt>【紹介サイト】</dt>
+                                        <dd><%= link_to "http://anemoisoft.web.fc2.com/gamepage3.html", "http://anemoisoft.web.fc2.com/gamepage3.html", class: '', target: "_blank"%></dd>
+                                        <dt>【使用技術】</dt>
+                                        <dd>C++・Boost C++ライブラリ・DXライブラリ</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-bottom">
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    対戦型タイピングゲーム
+                                    <div class="uk-card-title uk-margin-small">
+                                        世にも不思議な街 -Exceeded Typers-
+                                    </div>
+
+                                    <div class="uk-flex uk-flex-center">
+                                        <%= image_tag "yomachi2_capture.jpg", :width=>"320" ,:height=>"240", :class=>"uk-img uk-transition-scale-up uk-transition-opaque"%>
+                                    </div>
+
+                                    <dl class="uk-description-list">    
+                                        <dt>【紹介サイト】</dt>
+                                        <dd><%= link_to "http://anemoisoft.web.fc2.com/gamepage2.html", "http://anemoisoft.web.fc2.com/gamepage2.html", class: '', target: "_blank"%></dd>
+                                        <dt>【使用技術】</dt>
+                                        <dd>C++・DXライブラリ</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
